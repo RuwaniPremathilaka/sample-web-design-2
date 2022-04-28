@@ -1,0 +1,190 @@
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+font-size: 14px;
+}
+/*nav section*/
+.navbar {
+width: 100%;
+height: 50px;
+background-color: rgb(176, 176, 176);
+overflow: auto;
+padding: 5px 20px 5px 20px;
+}
+.navbar a {
+float: right;
+padding: 12px;
+color: black;
+text-decoration: none;
+font-size: 12px;
+}
+.first_section,
+.second_section{
+margin: 0;
+padding: 20px;
+}
+/* end nav section */
+/*first section*/
+.left, .right { display:  inline-block; width: 50%; }
+.left 
+{ 
+float: left; 
+font-weight: bold;
+}
+.collection{
+float: left; 
+}
+.right 
+{
+float: right;
+text-align: right;
+font-weight: bold; 
+}
+/* end first section */
+/* star table */
+.collection {
+float: left;
+width: 60%;
+padding: 5px;
+}
+.row{
+padding: 20px;
+}
+.container  {
+table-layout: fixed ;
+width: 100%;
+}
+.container  {
+text-align: left;
+}
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+background-color: #DCDCDC	;
+}
+/* Background-color of the even rows */
+.container tr:nth-child(even) {
+background-color: #DCDCDC	;
+}
+.bgcolor_cell {
+background-color:#ffffff;
+text-align: center;
+}
+/* end table */
+/* start message */
+.message {
+padding: 24px 20px 20px 20px;
+width: 40%;
+float: right; 
+font-size: 12px;
+line-height: 1.3;
+}
+.message-textare{
+padding: 10px 0px 0px 0px;
+}
+textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+.confirmbutton{
+width: 60px;
+background-color: #69d3b3;
+color: white;
+padding: 10px 10px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 12px;
+}
+.pausebutton{
+width: 60px;
+border: 1px solid #69d3b3;
+color: white;
+padding: 10px 10px;
+background-color: #fff;
+border-radius: 4px;
+cursor: pointer;
+color: #69d3b3;
+font-size: 12px;
+}
+.buttonalign{
+text-align: right;
+}
+/* end message */
+/* online icon */
+.dot {
+height: 10px;
+width: 10px;
+background-color: rgb(107, 157, 99);
+border-radius: 50%;
+display: inline-block;
+}
+/* end online icon */
+/* three dot icon */
+.icon:after {
+content: '\2807';
+font-size: 15px;
+border: 1px solid black;
+text-align: center;
+}
+/* end three dot icon */
+/* start color box */
+.bluebox{
+width: 60px;
+height: 30px;
+background-color: #0d6efd;
+}
+.loadedtext,.boxoutlinetext,.redtext,.grayboxtext{
+padding: 10px;
+}
+.blueboxoutline{
+width: 60px;
+height: 30px;
+border: 1px solid #0d6efd;
+}
+.redbox{
+width: 60px;
+height: 30px;
+border: 1px solid rgb(255, 0, 0);
+}
+.graybox{
+width: 60px;
+height: 30px;
+background-color: #DCDCDC	;
+}
+.colorbox {
+width: 100%;
+height: 50px;
+margin: 0;
+display: flex;
+padding: 5px 20px 5px 20px;
+}
+/* end color box */
+/*  break point at 550px: */
+@media screen and (max-width: 550px) {
+.container {
+text-align: center;
+overflow: hidden;
+margin: 0 auto;
+width: 100%;
+display: inline-table;
+}
+.message{
+width: 100%;
+}
+.collection  {
+width: 100%;
+}
+}
